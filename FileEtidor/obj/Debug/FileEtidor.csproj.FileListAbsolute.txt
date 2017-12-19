@@ -1,0 +1,10 @@
+C:\Users\admin\Desktop\Git-Project\FileEditor\FileEtidor\bin\Debug\FileEtidor.exe.config
+C:\Users\admin\Desktop\Git-Project\FileEditor\FileEtidor\bin\Debug\FileEtidor.exe
+C:\Users\admin\Desktop\Git-Project\FileEditor\FileEtidor\bin\Debug\FileEtidor.pdb
+C:\Users\admin\Desktop\Git-Project\FileEditor\FileEtidor\obj\Debug\FileEtidor.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\Git-Project\FileEditor\FileEtidor\obj\Debug\FileEtidor.Form1.resources
+C:\Users\admin\Desktop\Git-Project\FileEditor\FileEtidor\obj\Debug\FileEtidor.Properties.Resources.resources
+C:\Users\admin\Desktop\Git-Project\FileEditor\FileEtidor\obj\Debug\FileEtidor.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\Git-Project\FileEditor\FileEtidor\obj\Debug\FileEtidor.exe
+C:\Users\admin\Desktop\Git-Project\FileEditor\FileEtidor\obj\Debug\FileEtidor.pdb
+C:\Users\admin\Desktop\Git-Project\FileEditor\FileEtidor\obj\Debug\FileEtidor.Form2.resources
