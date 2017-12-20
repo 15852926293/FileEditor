@@ -16,5 +16,16 @@ namespace FileEtidor
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string fileStream = richTextBox1.Text.ToString();
+            FileRW.fileWriter(GlobalConfig.FilePath, fileStream);
+        }
     }
 }

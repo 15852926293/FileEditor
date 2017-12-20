@@ -39,7 +39,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(712, 394);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.richTextBox1.Text = FileRW.fileReader(GlobalConfig.FilePath);
             // 
             // button1
             // 
@@ -49,6 +49,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(button1_Click);
             // 
             // button2
             // 
@@ -58,6 +59,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(button2_Click);
             // 
             // Form2
             // 
