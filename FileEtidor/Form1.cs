@@ -35,7 +35,7 @@ namespace FileEtidor
         {
             GetFilePath();
             Form2 f2 = new Form2();
-            //this.Hide();
+            this.Hide();
             //this.Close();
             f2.Show();
             

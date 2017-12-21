@@ -73,7 +73,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FileEditor";
             this.ResumeLayout(false);
-
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(Form2_FormClosed);
         }
 
         #endregion

@@ -19,13 +19,33 @@ namespace FileEtidor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult dr;
+            dr = MessageBox.Show("Do you want to save changes ?","FileEditor",MessageBoxButtons.YesNoCancel);
+            if (dr == DialogResult.No)
+            {
+                this.Close();
+            }
+            else if (dr == DialogResult.Yes)
+            {
+                string fileStream = richTextBox1.Text.ToString();
+                FileRW.fileWriter(GlobalConfig.FilePath, fileStream);
+                this.Close();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             string fileStream = richTextBox1.Text.ToString();
             FileRW.fileWriter(GlobalConfig.FilePath, fileStream);
+            this.Close();
         }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+
     }
 }
