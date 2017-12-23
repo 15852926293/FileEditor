@@ -18,27 +18,41 @@ namespace FileEtidor
             InitializeComponent();
         }
 
-        private void GetFilePath()
+        private bool GetFilePath()
         {
             FileStream fs = null;
             string FilePath = textBox1.Text.ToString();
             GlobalConfig.FilePath = FilePath;
-
+            if (!FilePath.Contains(@"\"))
+            {
+                MessageBox.Show("Illegal file paht !", "FileEditor", MessageBoxButtons.OK);
+                return false;
+            }
             if (File.Exists(FilePath) == false)
             {
-                fs = File.Create(FilePath);
-                fs.Close();
+                try
+                {
+                    fs = File.Create(FilePath);
+                    fs.Close();
+                    return true;
+                }
+                catch
+                {
+                    MessageBox.Show("Illegal file path !", "FileEditor", MessageBoxButtons.OK);
+                    return false;
+                }
             }
+            return true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            GetFilePath();
-            Form2 f2 = new Form2();
-            this.Hide();
-            //this.Close();
-            f2.Show();
-            
+            if (GetFilePath() == true)
+            {
+                Form2 f2 = new Form2();
+                this.Hide();
+                f2.Show();
+            }           
         }
     }
 }
